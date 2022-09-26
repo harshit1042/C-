@@ -1,17 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
+string b;
+int a, c;
 int main()
 {
-    int t, num = 0;
-    cin >> t;
-    for (int i = 0; i < t; i++)
+    cin >> a >> b;
+    for (int i = 0; i < a; i++)
     {
-        string s[i];
-        cin >> s[i];
-        if (s[i] == s[i + 1] && s[i + 1] == s[i + 2])
+        if (b[i] == b[i + 1])
         {
-            num = i - 1;
+            c++;
         }
-        cout << num;
     }
+    cout << c;
 }
