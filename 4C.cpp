@@ -4,21 +4,20 @@ int main()
 {
     int n;
     cin >> n;
-    map<string, int> db;
+    map<string, int> freq;
     string s;
     while (n--)
     {
         cin >> s;
-        if (db.count(s) == 0)
+        if (freq.count(s) == 0)
         {
             cout << "OK" << endl;
-            db[s] = 1;
         }
         else
         {
-            cout << s << db[s] << endl;
-            db[s] += 1;
+            cout << s << freq[s] << endl;
         }
+        freq[s] += 1;
     }
     return 0;
 }
